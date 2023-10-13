@@ -167,4 +167,4 @@ QPS：Query Per Second，数据库每秒执⾏的SQL语句数，包含insert、s
 
 ## 测试结果参考
 注：ECS测试GaussDB部分参考华为云白皮书：https://support.huaweicloud.com/intl/zh-cn/pwp-gaussdb/gaussdb_pwp_0002.html
-![Alt text](image-1.png)
+![Alt text](image.png)
