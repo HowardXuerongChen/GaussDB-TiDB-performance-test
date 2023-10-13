@@ -1,5 +1,3 @@
-# GaussDB-TiDB-performance-test
-Using sysbench to test the performance of GuassDB from Huawei and TiDB using AWS.
 # 测试方法
 
 ## 测试环境
@@ -165,6 +163,10 @@ sysbench --db-driver=mysql --mysql-host=<host> --mysql-port=<port> --mysql-user=
 TPS：Transaction Per Second，数据库每秒执⾏的事务数。   
 QPS：Query Per Second，数据库每秒执⾏的SQL语句数，包含insert、select、update、delete等。
 
-## 测试结果参考
 注：ECS测试GaussDB部分参考华为云白皮书：https://support.huaweicloud.com/intl/zh-cn/pwp-gaussdb/gaussdb_pwp_0002.html
-![Alt text](image.png)
+## 测试结果参考
+![avatar](image.png)
+使用AWS的EC2作为压力机来测试时，当线程过大时，prepare指令报错如图：
+![avatar](EC2-TiDB-error.png)
+使用华为云的ECS作为压力机来测试时，连接TiDB，当线程过大时，prepare指令报错如图：
+![avatar](ECS-TiDB-error.png)
